@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-bell:TheBells2001@todolist.ih9we.mongodb.net/blogAtlas?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
 
 const postsSchema = new mongoose.Schema({
   title: {
